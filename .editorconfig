@@ -1,0 +1,11 @@
+root = true                         # this is the root .editorconfig file, stop searching parent directories
+
+[*]                                 # apply these rules to all files
+indent_style = space                # use spaces instead of tabs
+indent_size = 2                     # set indentation to 2 spaces
+end_of_line = lf                    # use Linux-style line endings
+charset = utf-8                     # set character encoding to UTF-8,
+trim_trailing_whitespace = true     # removing extra spaces
+insert_final_newline = true         # ensure file ends with a newline
+
+# [*.{js,html,css}]                   # apply specific rules for JavaScript, HTML, and CSS files

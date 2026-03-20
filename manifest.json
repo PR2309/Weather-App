@@ -1,0 +1,49 @@
+{
+    "name": "Weather App",
+    "short_name": "Weather",
+    "description": "Sleek single-page weather app showing real-time conditions, forecasts, and local metrics for any city worldwide.",
+    "lang": "en-US",
+    "dir": "ltr",
+    "start_url": "/Weather-App/?source=pwa",
+    "scope": "/Weather-App/",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#ccccc7",
+    "theme_color": "#193860",
+    "icons": [
+        {
+            "src": "/Weather-App/image/logo1.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Weather-App/image/logo1.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["weather", "utilities"],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Search city",
+            "short_name": "Search",
+            "description": "Quickly search a city's weather",
+            "url": "/Weather-App/?source=pwa&action=search",
+            "icons": [
+                { "src": "/Weather-App/images/default.png", "sizes": "96x96", "type": "image/png" }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/Weather-App/images/default.png",
+            "sizes": "640x480",
+            "type": "image/png",
+            "label": "Weather summary"
+        }
+    ]
+}

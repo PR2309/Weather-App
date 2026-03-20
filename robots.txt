@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pr2309.github.io/Weather-App/sitemap.xml
