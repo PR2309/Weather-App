@@ -59,69 +59,82 @@ A sleek and responsive **Weather Web Application** that provides real-time weath
 ## 📂 Project Structure
 
 ```bash
-Weather-App/                          # Root directory for the Weather Application project
-│
-├── index.html                        # Main HTML file - Entry point with weather app UI structure
-├── style.css                         # Primary CSS file - Custom styles for weather app layout and animations
-├── css.css                           # Alternative CSS file - Additional styling options and responsive design
-├── app.js                            # Main JavaScript file - Core weather API logic, DOM manipulation, and event handlers
-├── server.js                         # Node.js development server - Express server for local development and API proxy
-├── manifest.json                     # PWA manifest - Progressive Web App configuration for installation
-├── robots.txt                        # SEO robots file - Search engine crawling instructions
-├── sitemap.xml                       # SEO sitemap - XML sitemap for search engine indexing
-├── Preview.png                       # Project preview image - Screenshot or demo image of the weather app
-├── LICENSE                           # MIT License file - Project licensing and usage terms
-├── README.md                         # Project documentation - Complete setup, features, and usage guide
-├── .env.example                      # Environment variables template - API key placeholder for OpenWeather API
-├── .gitignore                        # Git ignore rules - Files and folders excluded from version control
-├── .editorconfig                     # Editor configuration - Consistent coding style across editors
-├── .babelrc                          # Babel configuration - JavaScript transpilation settings for browser compatibility
-├── .npmrc                            # NPM configuration - Package manager settings and registry preferences
-├── .prettierrc                       # Prettier configuration - Code formatting rules and style preferences
-├── .prettierignore                   # Prettier ignore rules - Files excluded from automatic formatting
-├── .eslintrc.json                    # ESLint configuration - JavaScript linting rules and code quality checks
-├── .eslintignore                     # ESLint ignore rules - Files excluded from linting checks
-├── .stylelintrc                      # Stylelint configuration - CSS linting rules for code quality
-├── jsconfig.json                     # JavaScript project configuration - TypeScript-like settings for JS projects
-├── CHANGELOG.md                      # Version history - Project updates, bug fixes, and feature additions
-├── CODE_OF_CONDUCT.md                # Community guidelines - Rules for respectful project participation
-├── CONTRIBUTING.md                   # Contribution guidelines - Instructions for contributing to the project
-├── SECURITY.md                       # Security policy - Vulnerability reporting and security guidelines
-│
-├── .vscode/                          # VS Code workspace settings - Editor-specific configuration and extensions
-├── .git/                             # Git repository data - Version control system files
-│
-└── images/                           # Weather icons and assets directory
-      ├── air-quality-icon.png          # Air quality indicator icon
-      ├── clear.png                     # Clear weather static icon
-      ├── clearGIF.gif                  # Clear weather animated background
-      ├── clouds.png                    # Cloudy weather static icon
-      ├── cloudsGIF.gif                 # Cloudy weather animated background
-      ├── day-and-night-icon.png        # Day/night cycle indicator icon
-      ├── default.png                   # Default/fallback weather icon
-      ├── drizzle.png                   # Drizzle weather static icon
-      ├── drizzleGIF.gif                # Drizzle weather animated background
-      ├── haze.png                      # Haze weather static icon
-      ├── hazeGIF.gif                   # Haze weather animated background
-      ├── humidity-icon.png             # Humidity indicator icon
-      ├── humidity.png                  # Alternative humidity icon
-      ├── logo1.png                     # Weather app logo/brand icon
-      ├── mist.png                      # Mist weather static icon
-      ├── mistGIF.gif                   # Mist weather animated background
-      ├── pressure-gauge-icon.png       # Atmospheric pressure indicator icon
-      ├── rain.png                      # Rain weather static icon
-      ├── rainGIF.gif                   # Rain weather animated background
-      ├── search.png                    # Search functionality icon
-      ├── smoke.png                     # Smoke weather static icon
-      ├── smokeGIF.gif                  # Smoke weather animated background
-      ├── snow.png                      # Snow weather static icon
-      ├── snowGIF.gif                   # Snow weather animated background
-      ├── temperature-icon.png          # Temperature indicator icon
-      ├── thunderstorm.png              # Thunderstorm weather static icon
-      ├── thunderstormGIF.gif           # Thunderstorm weather animated background
-      ├── time-icon.png                 # Time indicator icon
-      ├── uv-icon.png                   # UV index indicator icon
-      └── wind-icon.png                 # Wind speed indicator icon
+
+   Weather-App/                                 # Root directory
+      │
+      ├── index.html                            # Entry point - UI structure
+      ├── style.css                             # Styles (layout, animations)
+      ├── app.js                                # Core logic (API, DOM, events)
+      ├── server.js                             # Express dev server / API proxy (optional)
+      │
+      ├── manifest.json                         # PWA configuration
+      ├── robots.txt                            # SEO crawling rules
+      ├── sitemap.xml                           # SEO sitemap
+      │
+      ├── Preview.png                           # Project preview screenshot
+      │
+      ├── README.md                             # Documentation (setup, usage, features)
+      ├── LICENSE                               # MIT license
+      ├── CHANGELOG.md                          # Version history
+      ├── CONTRIBUTING.md                       # Contribution guide
+      ├── CODE_OF_CONDUCT.md                    # Community guidelines
+      ├── SECURITY.md                           # Security policy
+      │
+      ├── .env.example                          # Env template (API key placeholder)
+      ├── .gitignore                            # Git ignored files
+      │
+      ├── .editorconfig                         # Editor consistency rules
+      ├── .prettierrc                           # Code formatting rules
+      ├── .prettierignore                       # Ignore formatting
+      ├── .eslintrc.json                        # JS linting rules
+      ├── .eslintignore                         # Ignore linting
+      ├── .stylelintrc                          # CSS linting rules
+      │
+      ├── .babelrc                              # Babel config (if used)
+      ├── .npmrc                                # NPM config
+      ├── jsconfig.json                         # JS project config (intellisense)
+      │
+      ├── .vscode/                              # VS Code settings
+      ├── .git/                                 # Git internals (auto-generated)
+      │
+      └── media/                                # All assets (cleaned structure)
+            │
+            ├── logo1.png                       # Project Logo
+            │
+            ├── Icons/                          # UI icons
+            │     ├── air-quality-icon.png
+            │     ├── day-and-night-icon.png
+            │     ├── humidity-icon.png
+            │     ├── pressure-gauge-icon.png
+            │     ├── search.png
+            │     ├── temperature-icon.png
+            │     ├── time-icon.png
+            │     ├── uv-icon.png
+            │     └── wind-icon.png
+            │
+            ├── GIFs/                   # Animated backgrounds
+            │     ├── clear.gif
+            │     ├── clouds.gif
+            │     ├── drizzle.gif
+            │     ├── haze.gif
+            │     ├── mist.gif
+            │     ├── rain.gif
+            │     ├── smoke.gif
+            │     ├── snow.gif
+            │     └── thunderstorm.gif
+            │
+            └── images/                  # Static weather icons
+                  ├── clear.png
+                  ├── clouds.png
+                  ├── default.png
+                  ├── drizzle.png
+                  ├── haze.png
+                  ├── mist.png
+                  ├── rain.png
+                  ├── smoke.png
+                  ├── snow.png
+                  └── thunderstorm.png
+
 ```
 
 ---

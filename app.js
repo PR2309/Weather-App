@@ -70,48 +70,48 @@ async function checkWeather() {
     const weatherIcon = document.querySelector('.weather-icon');
     switch (data.weather[0].main.toLowerCase()) {
       case 'clouds':
-        weatherIcon.src = './media/clouds.png';
+        weatherIcon.src = './media/images/clouds.png';
         document.body.style.backgroundImage =
           "url('./media/GIFs/cloudsGIF.gif')";
         break;
       case 'clear':
-        weatherIcon.src = './media/clear.png';
+        weatherIcon.src = './media/images/clear.png';
         document.body.style.backgroundImage =
           "url('./media/GIFs/clearGIF.gif')";
         break;
       case 'rain':
-        weatherIcon.src = './media/rain.png';
+        weatherIcon.src = './media/images/rain.png';
         document.body.style.backgroundImage = "url('./media/GIFs/rainGIF.gif')";
         break;
       case 'drizzle':
-        weatherIcon.src = './media/drizzle.png';
+        weatherIcon.src = './media/images/drizzle.png';
         document.body.style.backgroundImage =
           "url('./media/GIFs/drizzleGIF.gif')";
         break;
       case 'mist':
-        weatherIcon.src = './media/mist.png';
+        weatherIcon.src = './media/images/mist.png';
         document.body.style.backgroundImage = "url('./media/GIFs/mistGIF.gif')";
         break;
       case 'haze':
-        weatherIcon.src = './media/haze.png';
+        weatherIcon.src = './media/images/haze.png';
         document.body.style.backgroundImage = "url('./media/GIFs/hazeGIF.gif')";
         break;
       case 'smoke':
-        weatherIcon.src = './media/smoke.png';
+        weatherIcon.src = './media/images/smoke.png';
         document.body.style.backgroundImage =
           "url('./media/GIFs/smokeGIF.gif')";
         break;
       case 'snow':
-        weatherIcon.src = './media/snow.png';
+        weatherIcon.src = './media/images/snow.png';
         document.body.style.backgroundImage = "url('./media/GIFs/snowGIF.gif')";
         break;
       case 'thunderstorm':
-        weatherIcon.src = './media/thunderstorm.png';
+        weatherIcon.src = './media/images/thunderstorm.png';
         document.body.style.backgroundImage =
           "url('./media/GIFs/thunderstormGIF.gif')";
         break;
       default:
-        weatherIcon.src = './media/default.png';
+        weatherIcon.src = './media/images/default.png';
         document.body.style.backgroundImage =
           'linear-gradient(135deg, #00feba, #5b548a)';
         break;
